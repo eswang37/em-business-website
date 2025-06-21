@@ -17,8 +17,7 @@ import {
   Paper,
   Divider,
   Alert,
-  useTheme,
-  useMediaQuery
+  useTheme
 } from '@mui/material';
 import {
   Add as AddIcon,
@@ -33,7 +32,6 @@ import {
 
 const GamePlan = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   
   const [businessName, setBusinessName] = useState('');
   const [businessType, setBusinessType] = useState('');
